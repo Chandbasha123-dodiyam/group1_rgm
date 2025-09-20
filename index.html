@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">group1</div>
+      <img src="YUGA SPARK LOGO_20250719_063551_0000.png" class="image">
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>GROUP1</h1>
+      <p>Web Developer | Designer | Problem Solver</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2 class="bb"><u>About Me</u></h2>
+    <p class="aa">RAJEEV GANDHI MEMORIAL COLLEGE OF ENGINEERING & TECHNOLOGY
+(AUTONOMOUS)
+NANDYAL - 518501, NANDYAL (DIST), A.P., INDIA
+ACCREDITED BY NBA (6 TIMES), ACCREDITED BY NAAC WITH ‘A+’ GRADE, NEW DELHI, WORLD BANK FUNDED INSTITUTE
+Approved by AICTE, NEW DELHI;,Affiliated to J. N. T. University Anantapuramu</p>
+  </section>
+
+  <section id="projects">
+    <h2 class="bb"><u>Projects</u></h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A brief description of your first project.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>A brief description of your second project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" id="button">Send</button>
+    </form>
+    <!-- OR just email/phone:
+    <p>Email: your.email@example.com</p>
+    <p>Phone: (123) 456-7890</p> -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+
+  <script>
+    // Highlight active nav item on click
+    const links = document.querySelectorAll(".nav-link");
+    links.forEach(link => {
+      link.addEventListener("click", function () {
+        links.forEach(l => l.classList.remove("active"));
+        this.classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
